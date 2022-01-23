@@ -26,10 +26,7 @@ public class AccountService implements UserDetailsService{
 		this.accounts = accounts;
 		this.passwordEncoder = passwordEncoder;
 	}
-	
-	
-	
-	
+
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		Account account = accounts.findByEmail(username);

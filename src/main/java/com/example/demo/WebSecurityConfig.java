@@ -8,8 +8,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@Configuration
-@EnableWebSecurity // 이 어노테이션을 쓰는 순간 스프링부트가 제공하는 기본적인 시큐리티 설정은 없어진다.  
+//@Configuration
+//@EnableWebSecurity // 이 어노테이션을 쓰는 순간 스프링부트가 제공하는 기본적인 시큐리티 설정은 없어진다.  
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Override

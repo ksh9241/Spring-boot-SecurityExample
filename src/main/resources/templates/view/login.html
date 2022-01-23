@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Security Login Page</title>
+</head>
+<body>
+	<form id="loginForm" action="loginProc">
+		<div>
+			<input type="text" name="id">
+		</div>
+		<div>
+			<input tpye="password" name="pw">
+		</div>
+		
+		<button id="btn_signIn" type="button">SingIn</button>
+		<button id="btn_signUp" type="button">SingUp</button>
+	</form>
+</body>
+
+<script type="text/javascript">
+	window.addEventListener('DOMContentLoaded', (event) => {
+		eventFunction();	
+	});
+	
+	function eventFunction () {
+		signUp();
+	}
+	
+	function signUp () {
+		let signUp = document.querySelector("button #btn_signIn");
+		
+		signUp.addEventListener("click", ()=> {
+			alert("클릭됨.");
+		})
+	}
+</script>
+</html>
